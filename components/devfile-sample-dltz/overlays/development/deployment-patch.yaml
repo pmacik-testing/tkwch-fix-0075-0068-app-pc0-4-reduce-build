@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dltz
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0068-tenant/tkwch-fix-0075-0068-app/devfile-sample-dltz@sha256:3770f9204a5494b3c391ae85a12231fab2041be7c5123e7f727f4d1f7bcddaba
+        name: my-nodejs
+        resources: {}
+status: {}
